@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .movie-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .movie-info {
+            padding: 10px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Movie Booking</h1>
+    </header>
+
+    <section>
+        <div class="movie-card">
+            <img src="../Images/download (7).jpeg" alt="Movie 1">
+            <div class="movie-info">
+                <h2>Movie Title 1</h2>
+                <p>Release Date: January 1, 2023</p>
+                <p>Genre: Action</p>
+                <button onclick="bookMovie()">Book Now</button>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="../Images/download (8).jpeg" alt="Movie 2">
+            <div class="movie-info">
+                <h2>Movie Title 2</h2>
+                <p>Release Date: February 1, 2023</p>
+                <p>Genre: Comedy</p>
+                <button onclick="bookMovie()">Book Now</button>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script>
+        function bookMovie() {
+            alert("Movie booked! Enjoy the show!");
+        }
+    </script>
+
+</body>
+</html>
